@@ -1,0 +1,60 @@
+# ==============================
+# Secrets (never push these)
+# ==============================
+.env
+.env.*
+*.pem
+*.key
+*.crt
+.aws/
+credentials
+
+# ==============================
+# Python stuff
+# ==============================
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+venv/
+.venv/
+env/
+
+# ==============================
+# Lambda build files
+# ==============================
+*.zip
+lambda-package.zip
+pillow-layer.zip
+python/
+package/
+
+# ==============================
+# Terraform (very important)
+# ==============================
+.terraform/
+*.tfstate
+*.tfstate.*
+terraform.tfvars
+crash.log
+
+# ==============================
+# Editor / OS junk
+# ==============================
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# ==============================
+# Temporary AWS policy files
+# ==============================
+notification-config.json
+lifecycle.json
+trust-policy.json
+originals-policy.json
+thumbnails-policy.json
+frontend-policy.json
+cors-config.json
